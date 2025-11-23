@@ -1,0 +1,155 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+header img {
+  width: 6vw;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 800;
+}
+.hero-text span {
+  color: #4f46e5;
+}
+.hero-text p {
+  max-width: 500px;
+  margin-top: 20px;
+  color: #555;
+}
+.cta-btns a {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 2px solid #111;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #111;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.hero-img img {
+  width: 100%;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+/* PROJECTS */
+.section {
+  max-width: 1200px;
+  padding: 60px 40px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.card .content {
+  padding: 15px;
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+/* CONTACT */
+form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+form textarea {
+  grid-column: span 2;
+  height: 140px;
+}
+form button {
+  grid-column: span 2;
+  padding: 14px;
+  background: #111;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+/* SIMPLE REVEAL EFFECT */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
